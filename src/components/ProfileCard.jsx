@@ -1,15 +1,66 @@
+import { useState } from "react"
+
 export default function ProfileCard() {
+    const [users, setUsers] = useState([])
+    const [user, setUser] = useState({ name: "", email: "", img: "" })
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        setUsers([...users, user])
+        setUser({ name: "", email: "", img: "" })
+    }
+
+    function handleChange(e) {
+        setUser({ ...user, [e.target.name]: e.target.value });
+    }
+
+    function handleFileChange(e) {
+        const file = e.target.files[0]
+        if (file) {
+            setUser({ ...user, img: URL.createObjectURL(file) })
+        }
+    }
+
     return (
         <>
-                <div className="img">
-                    <img src="/vite.svg" alt="" />
-                </div>
-                <div className="name">
-                    <h1>Nahin</h1>
-                </div>
-                <div className="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, commodi non quos et velit debitis perspiciatis dolores rem reiciendis aliquid ducimus eveniet, necessitatibus fugit repellat.</p>
-                </div>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    name="name"
+                    value={user.name}
+                    onChange={handleChange}
+                    placeholder="Enter Name"
+                />
+                <input
+                    type="email"
+                    name="email"
+                    value={user.email}
+                    onChange={handleChange}
+                    placeholder="Enter Email"
+                />
+                <input type="file" accept="image/*" onChange={handleFileChange} />
+                <button type="submit">Submit</button>
+            </form>
+
+            <div className="profile">
+                {users.map((user, index) => (
+                    <div className="profileCard" key={index}>
+                        <div className="imgcard">
+                            {user.img ? (
+                                <img src={user.img} alt="Profile" />
+                            ) : (
+                                <img src="/vite.svg" alt="Default Profile" />
+                            )}
+                        </div>
+                        <div className="name">
+                            <h1>{user.name}</h1>
+                        </div>
+                        <div className="email">
+                            <p>{user.email}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </>
-    );
+    )
 }

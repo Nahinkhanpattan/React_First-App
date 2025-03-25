@@ -15,7 +15,7 @@ body{
 {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     gap: 20px;
     /* align-items: center; */
     justify-content: center;
@@ -23,6 +23,7 @@ body{
 .card
 {
     display: flex;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     /* justify-content: center; */
     /* background: linear-gradient(to right, blue, red); */
@@ -67,4 +68,57 @@ body{
 .card button:hover{
 cursor: pointer;
 background: red;
+}
+
+form{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.profile{
+    padding: 50px;   
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profileCard
+{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    max-width: 350px;
+    /* justify-content: space-around; */
+     /* margin: 0 auto; */
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 25px;
+    color: white;
+    overflow:hidden;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 5px 5px 10px rgb(151, 43, 43);
+}
+
+.profieCard .imgcard{
+    width: 100px;
+}
+.imgcard img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+    border-radius: 10px;
+    object-position:center;
+}
+input{
+    border-radius: 25px;
+    padding: 7px;
+}
+button{
+    font-size: 15px;
+    border-radius: 15px;
+    width: 80px;
+
 }
