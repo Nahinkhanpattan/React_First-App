@@ -99,7 +99,7 @@ form{
     color: white;
     overflow:hidden;
     transition: transform 0.3s ease-in-out;
-    box-shadow: 5px 5px 10px rgb(151, 43, 43);
+    box-shadow: 5px 5px 10px rgb(151, 43, 43), -5px -5px 10px rgb(43, 70, 151);
 }
 
 .profieCard .imgcard{
