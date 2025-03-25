@@ -30,6 +30,7 @@ export default function ProfileCard() {
                     value={user.name}
                     onChange={handleChange}
                     placeholder="Enter Name"
+                    required
                 />
                 <input
                     type="email"
@@ -37,6 +38,7 @@ export default function ProfileCard() {
                     value={user.email}
                     onChange={handleChange}
                     placeholder="Enter Email"
+                    required
                 />
                 <input type="file" accept="image/*" onChange={handleFileChange} />
                 <button type="submit">Submit</button>

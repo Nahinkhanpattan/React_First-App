@@ -122,3 +122,13 @@ button{
     width: 80px;
 
 }
+@media(max-width:450px)
+{
+    body{
+        padding: 0;
+    }
+    form{
+        padding: 25px;
+        flex-wrap: wrap;
+    }
+}
