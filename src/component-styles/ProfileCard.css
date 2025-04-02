@@ -20,6 +20,7 @@
     overflow:hidden;
     transition: transform 0.3s ease-in-out;
     box-shadow: 5px 5px 10px rgb(151, 43, 43), -5px -5px 10px rgb(43, 70, 151);
+    /* margin-top: 10px; */
 }
 
 .profieCard .imgcard{
@@ -46,6 +47,7 @@ form{
     display: flex;
     gap: 10px;
     justify-content: center;
+    margin-top: 10px;
 }
 @media(max-width:450px)
 {

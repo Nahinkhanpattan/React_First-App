@@ -12,13 +12,13 @@ export default function App() {
 
   return (<>
     <Navbar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/movie" element={<TheatreCard />} />
-      <Route path="/profile" element={<ProfileCard />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/movie" element={<TheatreCard />} />
+        <Route path="/profile" element={<ProfileCard />} />
+      </Routes>
   </>
   )
 }

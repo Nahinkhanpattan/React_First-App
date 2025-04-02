@@ -1,0 +1,33 @@
+.Hero
+{
+    /* background: url("https://media.istockphoto.com/id/177512311/photo/space-background-stars-universe-galaxy-and-nebula.jpg?s=612x612&w=0&k=20&c=Fo9pcwfjUjr2WcBuNPwvjs2zRnXk0xVSQLkhW4JmXlY="); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    gap: 10px;
+    align-items: center;
+}
+.pfp img{
+    border-radius: 50%;
+    width: 100%;
+}
+.pfp{
+    width: 35%;
+}
+.main-content{
+    align-self: center;
+    color: white;
+    width: 65%;
+}
+.main-content h1{
+    color: white;
+    width: 100%;
+}
+.main-content p{
+    width: 80%;
+}

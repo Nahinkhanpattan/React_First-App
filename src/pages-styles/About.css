@@ -1,0 +1,87 @@
+.HeroAbout {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .main-content {
+    color: white;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .skills-section {
+    margin: 40px 0;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .skill-card {
+    background: rgba(180, 69, 69, 0.2);
+    border: 1px solid #b44545;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    background: #b44545;
+    transform: translateY(-5px);
+  }
+  
+  .experience-section {
+    margin-top: 50px;
+  }
+  
+  .timeline {
+    position: relative;
+    margin-top: 30px;
+    padding-left: 30px;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #b44545;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 30px;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #b44545;
+  }
+  
+  .timeline-date {
+    color: #b44545;
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }

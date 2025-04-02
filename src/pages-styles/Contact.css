@@ -1,0 +1,46 @@
+.HeroContact {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .main-content {
+    color: white;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .contact-container {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 15px;
+  }
+  
+  .info-item i {
+    font-size: 1.2rem;
+    color: #b44545;
+  }
+  
+  
+  /* Font Awesome icons */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');

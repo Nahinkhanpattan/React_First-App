@@ -10,8 +10,10 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 10vh; /* Define a fixed height */
-    z-index: 1000; /* Keep navbar on top */
+    height: 10vh;
+    z-index: 1000;
+    /* Add padding to prevent content clipping */
+    box-sizing: border-box;
 }
 
 body {
