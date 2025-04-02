@@ -7,7 +7,7 @@ export default function Navbar() {
         <>
             <div className="navbar">
                 <div className="logo">
-                    <img src="/React_First-App/vite.svg" alt="" />
+                    <img src="/React_First-App/Nahin-logo-w-rounded-wbg.png" width="150px"  alt="" />
                 </div>
                 <div className="navlinks">
                     <Link to="/">Home</Link>

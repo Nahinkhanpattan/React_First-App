@@ -1,32 +1,44 @@
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css');
-.navbar
-{
-background-color: azure;
-display: flex;
-gap: 10px;
-justify-content: space-evenly;
-align-items: center;
+
+.navbar {
+    background-color: azure;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh; /* Define a fixed height */
+    z-index: 1000; /* Keep navbar on top */
 }
-.logo
-{
- height: 8vh; 
- align-items: center;  
+
+body {
+    padding-top: 10vh; /* Prevent content from being hidden under navbar */
 }
-.logo img{
-    align-self: center;
+
+.logo {
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.navlinks{
+
+.navlinks {
     display: flex;
     gap: 10px;
-    font-size: large;
+    font-size: 1.5em;
 }
-.navlinks a{
+
+.navlinks a {
     text-decoration: none;
     color: black;
 }
-.social
-{
+
+.social {
     display: flex;
     gap: 10px;
     color: black;
+    font-size: 1.5em;
 }
