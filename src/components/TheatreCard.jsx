@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import "../component-styles/TheatreCard.css"
 export default function TheatreCard() {
     const URL = "https://www.freetestapi.com/api/v1/movies"
     const [movies, setMovies] = useState(null)

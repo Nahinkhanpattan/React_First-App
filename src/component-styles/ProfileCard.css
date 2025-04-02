@@ -1,0 +1,59 @@
+.profile{
+    padding: 50px;   
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profileCard
+{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    max-width: 350px;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 25px;
+    color: white;
+    overflow:hidden;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 5px 5px 10px rgb(151, 43, 43), -5px -5px 10px rgb(43, 70, 151);
+}
+
+.profieCard .imgcard{
+    width: 100px;
+}
+.imgcard img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+    border-radius: 10px;
+    object-position:center;
+}
+input{
+    border-radius: 25px;
+    padding: 7px;
+}
+button{
+    font-size: 15px;
+    border-radius: 15px;
+    width: 80px;
+
+}
+form{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+@media(max-width:450px)
+{
+    body{
+        padding: 0;
+    }
+    form{
+        padding: 25px;
+        flex-wrap: wrap;
+    }
+}

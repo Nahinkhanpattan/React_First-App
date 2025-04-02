@@ -1,5 +1,6 @@
 import { useState } from "react"
-
+import defimg from "../assets/react.svg"
+import "../component-styles/ProfileCard.css"
 export default function ProfileCard() {
     const [users, setUsers] = useState([])
     const [user, setUser] = useState({ name: "", email: "", img: "" })
@@ -51,7 +52,7 @@ export default function ProfileCard() {
                             {user.img ? (
                                 <img src={user.img} alt="Profile" />
                             ) : (
-                                <img src="/vite.svg" alt="Default Profile" />
+                                <img src={`/React_First-App/vite.svg`} alt="Default Profile" />
                             )}
                         </div>
                         <div className="name">
