@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import "../component-styles/Navbar.css"
 
 export default function Navbar() {
     return (
@@ -14,6 +15,11 @@ export default function Navbar() {
                     <Link to="/contact">Contact</Link>
                     <Link to="/profile">ProfileCard</Link>
                     <Link to="/movie">MovieCard</Link>
+                </div>
+                <div className="social">
+                <i class="fi fi-brands-linkedin"></i>
+                <i class="fi fi-brands-github"></i>
+                <i class="fi fi-brands-dev"></i>
                 </div>
             </div>
         </>
